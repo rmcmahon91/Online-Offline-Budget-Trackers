@@ -41,11 +41,12 @@ function populateTable() {
 
 function populateChart() {
   // copy array and reverse it
-  
+
   const reversed = transactions.slice().reverse();
   let sum = 0;
 
   // create date labels for chart
+  
   const labels = reversed.map(t => {
     const date = new Date(t.date);
     return `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`;
